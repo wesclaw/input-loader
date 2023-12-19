@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(27, 19, 19, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 10px solid rgba(0, 0, 0, 0.336);
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+#input {
+  width: 30vw;
+  border-radius: 20px;
+  padding: 7px;
+  font-size: 1rem;
+}
+
+#submit {
+  padding: 7px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 50px;
+}
+
+.normal{
+  color: ghostwhite;
+  font-family: sans-serif;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.addToText {
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background: linear-gradient(0.25turn, transparent, #dfdada, transparent),
+    linear-gradient(#b9b7b7, #8a8787),
+    radial-gradient(38px circle at 19px 19px, #eee 50%, transparent 51%),
+    linear-gradient(#eee, #eee);
+  background-repeat: no-repeat;
+  background-position: -115px 0, 0 0, 0px 190px, 50px 195px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.137);
+  color: transparent;
+  padding: 5px;
+  border-radius: 5px; 
+}
+
+@keyframes move {
+  to {
+    background-position: 315px 0, 0 0, 0 190px, 50px 195px;
+  }
+}
